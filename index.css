@@ -1,0 +1,779 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    background: #0E1014;
+    margin: 0;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.header {
+    padding-top: 46px;
+}
+
+.header__logo {
+    display: flex;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__navigation {
+    margin-left: 52px; 
+    margin-right: 137px;
+}
+
+.header__list {
+    padding: 0;
+    display: flex;
+}
+
+.header__list-item {
+    list-style-type: none;
+    padding-right: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E4E5EA;
+}
+
+.header__list-item:last-child {
+    padding-right: 0;
+}
+
+.header__contacts {
+    display: flex;
+    gap: 47px;
+    text-align: right;
+}
+
+.header__number {
+    margin: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E4E5EA;
+}
+
+.header__social {
+    display: flex;
+}
+
+.header__icons {
+    padding-right: 30px;
+}
+
+.header__icons:last-child {
+    padding-right: 0;
+}
+
+.header__info {
+    margin-top: 10px;
+}
+
+.header__info-text {
+    width: 165px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: #E4E5EA;
+    margin: 0;
+}
+
+/*TODO main includes circle and lights / main container blur*/
+
+.main {
+    padding: 90px 0 69px;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 61px;
+}
+
+.main__info-title {
+    width: 362px;
+    margin: 0;
+    padding-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #E4E5EA;
+}
+
+.main__info-title_painted {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main__info-text {
+    width: 275px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4E5EA;
+}
+
+.main__table {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
+
+.main__table-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4E5EA;
+    margin-bottom: 40px;
+}
+
+.main__table-title_painted {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.table__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    justify-content: end;
+}
+
+.table__item-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #E4E5EA;
+    padding-bottom: 6px;
+}
+
+.table__item p {
+    width: 135px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #E4E5EA;
+}
+
+.mobile-table {
+    display: none;
+}
+
+.main__button-wrapper {
+    text-align: right;
+}
+
+.main__button {
+    width: 262px;
+    height: 61px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E4E5EA;
+    background-color: #4077F3;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile__circle-1 {
+    display: none;
+}
+
+.mobile__circle-2 {
+    display: none;
+}
+
+.mobile__circle-3 {
+    display: none;
+}
+
+.mobile__circle-4 {
+    display: none;
+}
+
+.mobile__circle-5 {
+    display: none;
+}
+
+.mobile__circle-6 {
+    display: none;
+}
+
+.mobile__circle-7 {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__container {
+    display: flex;
+    padding-bottom: 33px;
+}
+
+.footer__title {
+    margin-bottom: 20px;
+    margin-top: 55px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
+}
+
+/*В мобильной версии 6 и 7 пункт списка (благодарность и кейсы) поменялись местами и 6 ребенок меняет текст.
+это можно реализовать поменяв местами их параметр order например.
+И в декстоп спратять лишний пункт меню, которые появляется в мобильной.
+Но я подумал это просто очепятка и ничего не сделал хДД*/
+
+.footer__list {
+    padding: 0;
+    margin: 0;
+}
+
+.footer__list-item {
+    list-style-type: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E4E5EA;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+
+.footer__list-item:nth-child(5n) {
+    margin-bottom: 0;
+}
+
+.footer__about {
+    padding-right: 98px;
+}
+
+.footer__menu {
+    padding-right: 163px;
+}
+
+.list__container {
+    display: flex;
+    gap: 52px;
+}
+
+.footer__contacts {
+    text-align: right;
+}
+
+.footer__text {
+    width: 277px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #E4E5EA;
+}
+
+.footer__icons {
+    margin: 20px 0 20px 10px;
+}
+
+.footer__copyright-wrapper {
+    text-align: right;
+}
+
+.footer__copyright {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #E4E5EA;
+    margin-bottom: 5px;
+}
+
+.footer__policy {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #E4E5EA;
+}
+
+/*CIRCLES*/
+
+.circle-1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 868px;
+    top: -2px;
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+}
+
+.circle-2 {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 519px;
+    top: 83px;
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.circle-3 {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 851px;
+    top: 547px;
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+}
+
+.circle-4 {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 602px;
+    top: -154px;
+    border-radius: 50%;
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.circle-5 {
+    position: absolute;
+    width: 311px;
+    height: 311px;
+    left: -102px;
+    top: 251px;
+    border-radius: 50%;
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+/*MOBILE*/
+
+@media (max-width: 320px) {
+    .container {
+        width: 290px;
+        margin: 0 15px;
+    }
+
+    /*HEADER*/
+
+    .header {
+        width: 320px;
+        background: #0E1014;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+        padding-top: 0;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+
+    .header__info {
+        display: none;
+    }
+
+    .header__navigation {
+        margin: 0;
+    }
+
+    .header__list {
+        margin: 0;
+        display: flex;
+        gap: 16px;
+    }
+
+    .header__list-item {
+        display: flex;
+        padding: 20px 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #E4E5EA;
+    }
+
+    .header__list-item:last-child {
+        display: none;
+        margin-right: 6px;
+    }
+
+    /*MAIN*/
+
+    .main {
+        position: relative;
+        background-image: url('./assets/background_mobile.png');
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .main__blur {
+        height: 100%;
+        backdrop-filter: blur(7.5px);
+        background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%);
+    }
+
+    .main__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__info-title {
+        width: 272px;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 44px;
+        color: #E4E5EA;
+    }
+    
+    .main__info-title_painted {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 44px;
+        background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .main__info-text {
+        width: 271px;
+        margin-bottom: 45px;
+        color: #E4E5EA;
+    }
+
+    .main__table {
+        width: 290px;
+    }
+
+    .main__table-title {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .main__table-title_painted {
+        text-transform: lowercase;
+        background: linear-gradient(90deg, #FCB045 100%, #FD1D1D 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .table__container {
+        grid-gap: 10px;
+        justify-content: start;
+    }
+
+    .table__item {
+        margin: 0;
+    }
+
+    .table__item:nth-child(1) {
+        order: 2;
+    }
+    
+    .table__item:nth-child(2) {
+        order: 3;
+    }
+
+    .table__item:nth-child(3) {
+        order: 1;
+    }
+
+    .table__item:nth-child(4) {
+        order: 4;
+    }
+
+    .table__item-title {
+        display: none;
+    }
+
+    .table__item-text {
+        display: none;
+    }
+
+    .mobile-table {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .decorate {
+        width: 10px;
+        height: 2px;
+        background: linear-gradient(45deg, #FCB045, #FD1D1D);
+    }
+
+    .mobile-table__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #E4E5EA;
+    }
+
+    .main__button-wrapper {
+        display: none;
+    }
+
+    /*FOOTER*/
+
+    .footer {
+        width: 320px;
+        text-align: left;
+        padding: 15px 0 60px;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .footer__menu {
+        padding-right: 0;
+    }
+
+    .footer__title {
+        margin-top: 30px;
+    }
+
+    .list__container {
+        gap: 43px;
+    }
+
+    .footer__list-item {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .footer__contacts {
+        text-align: left;
+    }
+
+    .footer__text {
+        text-align: left; 
+    }
+
+    .footer__icons {
+        margin: 8px 10px 10px 0;
+    }
+
+    .footer__text:last-child {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left;
+        color: #E4E5EA;
+    }
+
+    .footer__copyright-wrapper {
+        text-align: left;
+    }
+
+    /*CIRCLES*/
+
+    .circle-1 {
+        display: none;
+    }
+
+    .circle-2 {
+        display: none;
+    }
+
+    .circle-3 {
+        display: none;
+    }
+
+    .circle-4 {
+        display: none;
+    }
+
+    .circle-5 {
+        display: none;
+    }
+
+    .mobile__circle-1 {
+        display: initial;
+        position: absolute;
+        width: 259px;
+        height: 259px;
+        left: 258px;
+        top: 107px;
+        background: #833AB4;
+        opacity: 0.5;
+        filter: blur(196px);
+        border-radius: 50%;
+    }
+
+    .mobile__circle-2 {
+        display: initial;
+        position: absolute;
+        width: 211px;
+        height: 210px;
+        left: -55px;
+        top: 241px;
+        background: #961A1A;
+        opacity: 0.5;
+        filter: blur(196px);
+        border-radius: 50%;
+    }
+
+    .mobile__circle-3 {
+        display: initial;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: -66px;
+        top: 519px;
+        background: #FCB045;
+        opacity: 0.4;
+        filter: blur(196px);
+        border-radius: 50%;
+    }
+
+    .mobile__circle-4 {
+        display: initial;
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        left: 29px;
+        top: 402px;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        backdrop-filter: blur(2px);
+        border-radius: 50%;
+    }
+
+    /* Есть в фигме но в макете не отображается */
+    .mobile__circle-5 {
+        display: none;
+        box-sizing: border-box;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 0px;
+        top: 0px;
+        background: radial-gradient(84.78% 84.78% at 0% 11.96%, rgba(255, 233, 203, 0.568) 0%, rgba(184, 131, 18, 0.448) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -4px 4px 7px rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(2.5px);
+        transform: matrix(0, 1, 1, 0, 0, 0);
+        border-radius: 50%;
+    }
+
+    .mobile__circle-6 {
+        display: initial;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 296px;
+        top: 236px;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+        filter: blur(5px);
+        backdrop-filter: blur(2px);
+        border-radius: 50%;
+    }
+
+    /* Есть в фигме но в макете не отображается */
+    .mobile__circle-7 {
+        display: none;
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        left: 278px;
+        top: 563px;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        filter: blur(2.5px);
+        backdrop-filter: blur(2px);
+        border-radius: 50%;
+    }
+}
